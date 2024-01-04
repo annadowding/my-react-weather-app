@@ -31,7 +31,7 @@ export default function WeatherIcon () {
         <ReactAnimatedWeather
             icon="CLEAR_DAY"
             color="black"
-            size={44}
+            size={42}
             animate={true}
         />
     )
