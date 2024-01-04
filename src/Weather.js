@@ -11,15 +11,15 @@ export default function Weather(props) {
 
   function handleResponse (response) {
     console.log(response.data);
-    setWeatherData ({
-        ready: true,
-        temperature: response.data.main.temp,
-        wind: response.data.wind.speed,
-        humidity: response.data.main.humidity,
-        description: response.data.weather[0].description,
-        city: response.data.name,
-        iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-        date: new Date (response.data.dt * 1000),
+    setWeatherData({
+      ready: true,
+      temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      city: response.data.name,
+      icon: response.data.weather[0].icon,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
