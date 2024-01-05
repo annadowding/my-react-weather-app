@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       <div class="container">
+        
         <Weather defaultCity="London"/>
+
         <footer>
           This project was coded by{" "}
           <a href="https://github.com/annadowding">Anna Dowding</a> and is{" "}
@@ -19,6 +21,7 @@ function App() {
           .and hosted on{" "}
           <a href="https://stellar-salmiakki-03ea04.netlify.app/">Netlify</a>
         </footer>
+
       </div>
     </div>
   );
